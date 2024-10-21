@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3320117941091274700}
+  - component: {fileID: 4197722220029423198}
   - component: {fileID: 3320117941091274703}
   - component: {fileID: 3320117941091274701}
   - component: {fileID: 3320117941091274698}
+  - component: {fileID: 7030239098508016828}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: asteroid
@@ -34,6 +36,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4197722220029423198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320117941091274702}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35faf4f5fba604172ab668c833e61743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &3320117941091274703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109,9 +123,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3320117941091274702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf5b48907c624323b0fa4c67fc374f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+--- !u!50 &7030239098508016828
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320117941091274702}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
